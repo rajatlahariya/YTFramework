@@ -61,5 +61,6 @@
 	<classpathentry kind="lib" path="E:/Study Material/jars/selenium-2.48.2-20210606T043535Z-001/selenium-2.48.2/libs/xalan-2.7.2.jar"/>
 	<classpathentry kind="lib" path="E:/Study Material/jars/selenium-2.48.2-20210606T043535Z-001/selenium-2.48.2/libs/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="E:/Study Material/jars/selenium-2.48.2-20210606T043535Z-001/selenium-2.48.2/libs/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="E:/Study Material/jars/extentreports-2.41.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

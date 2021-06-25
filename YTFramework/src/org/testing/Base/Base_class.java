@@ -1,20 +1,26 @@
 package org.testing.Base;
 
+import java.io.IOException;
+import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testing.utilities.PropertiesFile;
 import org.testng.annotations.*;
+
 
 public class Base_class {
 	public WebDriver driver;
-	
+	public Properties pr;
+	public Actions ac;
 	@BeforeMethod
-	public void beforemethod() {
+	public void beforemethod() throws IOException {
 		System.setProperty("webdriver.chrome.driver","../YTFramework/chromedriver.exe");
-		driver = new ChromeDriver();
+		pr=PropertiesFile.loadProperty("../YTFramework/object.properties");
+		driver= new ChromeDriver();
+		ac=new Actions(driver);
 		driver.navigate().to("https://www.youtube.com/");
 		driver.manage().window().maximize();
-System.out.println("This is the change");
-
 }
 
 	@AfterMethod
