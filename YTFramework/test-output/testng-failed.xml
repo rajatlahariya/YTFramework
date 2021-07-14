@@ -5,7 +5,6 @@
     <classes>
       <class name="org.testing.TestScripts.TC1">
         <methods>
-          <include name="Aftermethod"/>
           <include name="beforemethod"/>
           <include name="test"/>
         </methods>

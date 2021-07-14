@@ -2,7 +2,6 @@ package org.testing.Base;
 
 import java.io.IOException;
 import java.util.Properties;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testing.utilities.PropertiesFile;
@@ -10,7 +9,7 @@ import org.testng.annotations.*;
 
 
 public class Base_class {
-	public WebDriver driver;
+	public ChromeDriver driver;
 	public Properties pr;
 	public Actions ac;
 	@BeforeMethod
@@ -26,7 +25,7 @@ public class Base_class {
 	@AfterMethod
 	public void Aftermethod()
 	{
-	//driver.quit();
+	driver.quit();
 		
 	}
 

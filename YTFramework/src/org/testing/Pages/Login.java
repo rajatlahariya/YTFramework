@@ -4,16 +4,16 @@ import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 
 public class Login {
 
-	WebDriver driver;
+	ChromeDriver driver;
 	Properties pr;
-	public Login(WebDriver driver,Properties pr)
+	public Login(ChromeDriver driver,Properties pr)
 	{
 		this.pr=pr;
 		this.driver=driver;
@@ -34,5 +34,8 @@ public class Login {
 		Thread.sleep(1000);
 		ac.sendKeys(Keys.ENTER).perform();
 		Thread.sleep(2000);
+		
+		
+		
 	}
 }
